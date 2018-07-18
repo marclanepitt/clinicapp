@@ -1,0 +1,35 @@
+#search {
+    height: 70vh;
+    background-image: url("../../../images/hockey-bg.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;        
+}
+
+.search-center-box {
+    margin-left: 35vw;
+    margin-top: 12vh;
+    background-color:#eaecee;
+    border: .3vh solid gainsboro;
+    padding: 2vh;
+    display: inline-block;
+    border-bottom: .5vh solid lightgrey;
+}
+
+.main-title {
+    font-family: Graduate;
+    padding-top: 10vh;
+    font-size: 6vh;
+    color:#314159;
+}
+
+.sub-title {
+    font-family: Graduate;
+    padding-top: 3vh;
+    font-size:3.1vh;
+    color: #323232
+}
+
+.zip-code-input {
+    width: 10vw;
+}

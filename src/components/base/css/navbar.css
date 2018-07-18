@@ -1,0 +1,42 @@
+.c-nav {
+    background-color: #314159;
+    height: 10vh;
+    width:100%;
+    position: fixed;
+    z-index: 10;
+
+}
+
+.c-nav-logo {
+    font-family: "logo-font";
+    color:white;
+    font-size: 5vh;
+    padding: 2.6vh 0 0 2.1vw;
+    display:inline-block;
+}
+
+.c-nav-el {
+    display: inline-block;
+    padding: 2.9vh 1vw 0 1vw;;
+}
+
+.c-nav-right {
+    float:right;
+}
+
+#content {
+    height: 90vh;
+    padding-top: 10vh;
+}
+
+.navbar-loader {
+    height: 1vh;
+    margin-top:10vh;
+    background-color: darkcyan;
+    position:fixed;
+    z-index:100;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}

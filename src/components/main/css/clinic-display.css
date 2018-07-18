@@ -1,0 +1,67 @@
+.c-clinic-display {
+    width: 22vw;
+    height: 32vh;
+    margin: 5vh 5vw;
+    display: inline-block;
+    box-shadow: .2vh .2vh .2vh grey;
+    background-color: white;
+    cursor:pointer;
+    z-index: -10000;
+
+}
+
+.c-clinic-display:hover {
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    z-index: -1 !important;
+}
+
+.c-sports-banner {
+    float:right;
+    padding-right:1vw;
+    font-size: 3vh;
+}
+
+.c-sports-banner > div {
+    background-color:#314159;
+    padding-top:2.2vh;
+    width: 3vw;
+    text-align: center;
+    padding-bottom: 1.6vh;
+    margin-top: -1.7vh;
+    color:white;
+}
+
+.c-sports-banner::after {
+    z-index: -10000;
+    content:"";
+    display:block;
+    background-color: grey;
+    position:absolute;
+    width: 1vw;
+    height: 1vh;
+    margin-top: -5.9vh;
+    margin-left:2.5vw;
+    transform: rotate(65deg);
+
+}
+
+.c-clinic-image {
+    width: 22vw;
+    height: 32vh;
+}
+
+.c-clinic-overlay {
+    background-color: rgb(0,0,0,.72);
+    text-align: center;
+    position: absolute;
+    margin-top: 17vh;
+    padding: 4vh 2vw;
+    width: 18vw;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color:white;
+    font-family: Graduate;
+    z-index: 1;
+
+}

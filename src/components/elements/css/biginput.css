@@ -1,0 +1,21 @@
+.c-big-input {
+    padding: 1vh 0 1vh 1vw;
+    border: none;
+    height: 5vh;
+    font-size: 3vh;
+    border: 1px solid lightgrey;
+    box-shadow: 0 .3vh 0 lightgray;
+}
+
+.c-big-input::placeholder {
+    color: hsl(0,0%,50%);
+    opacity: 1;
+}
+
+.c-big-input:-ms-input-placeholder {
+    color: hsl(0,0%,50%);
+}
+
+.c-big-input::-ms-input-placeholder {
+    color: hsl(0,0%,50%);
+}

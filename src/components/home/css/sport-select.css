@@ -1,0 +1,45 @@
+.sport-select-outer {
+    display:inline-block;
+    padding: 0 1vw;
+}
+
+.sport-select-input {
+    padding: 1vh 0 1vh 1vw;
+    border: none;
+    height: 5vh;
+    font-size: 3vh;
+    border: 1px solid lightgrey;
+    box-shadow: 0 .3vh 0 lightgray;
+    width: 12vw;
+}
+
+.sport-select-input::placeholder {
+    color: hsl(0,0%,50%);
+    opacity: 1;
+}
+
+.sport-select-input:-ms-input-placeholder {
+    color: hsl(0,0%,50%);
+}
+
+.sport-select-input::-ms-input-placeholder {
+    color: hsl(0,0%,50%);
+}
+
+.sport-select-dropdown-wrap {
+    position: fixed;
+    background-color: white;
+    width: 13vw;
+    margin-top:.2vh;
+    box-shadow: 0 .3vh 0 lightgray;
+}
+
+.sport-select-option {
+    padding:2vh 1vw;
+    font-size: 3vh;
+    cursor:pointer;
+}
+
+.sport-select-option:hover {
+    background-color: gainsboro !important;
+}

@@ -1,0 +1,57 @@
+.c-topbar {
+    position:fixed;
+    height: 20vh;
+    width: 100vw;
+    background-color: gainsboro;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.c-topbar-el {
+    padding-left: 1vw;
+    margin-top:6vh;
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.c-topbar-hide::after {
+    font-family: FontAwesome !important;
+    content: "\F057";
+    float:right;
+    margin-right: 1vw;
+    font-size: 2vh;
+    cursor:pointer;
+}
+
+.c-topbar-hide:hover::after {
+    color: grey;
+}
+
+.c-topbar-hide{
+    float:right;
+    margin-top: 2vh;
+}
+
+.c-topbar-show{
+    float:right;
+    margin-top: 2vh;
+}
+
+.c-topbar-show::after {
+    font-family: FontAwesome !important;
+    content: "\F150";
+    float:right;
+    margin-right: 1vw;
+    font-size: 2vh;
+    cursor:pointer;
+}
+
+.c-topbar-show:hover::after {
+    color: grey;
+}

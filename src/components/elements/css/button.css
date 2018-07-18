@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Graduate');
+
+.c-btn {
+    padding: 1vh 1vw 1vh 1vw;
+    border: none;
+    cursor: pointer;
+    font-family: 'Graduate';
+    font-weight: bold;
+    outline:none;
+}
+
+.c-btn:active {
+    border: none !important;
+}
+
+.c-btn-large {
+    font-size:3.5vh;
+}
+
+.c-btn-default {
+    border-bottom: .6vh solid gainsboro;
+    background-color: white;
+    color:#323232;
+}
+
+
+.c-btn-default:hover {
+    background-color:whitesmoke;
+}
+
+.c-btn-danger {
+    border-bottom: .6vh solid #991e1e;
+    background-color: #ff3232;
+    color:white;
+}
+
+.c-btn-danger:hover {
+    background-color: #ff6f6f;
+}
+
+.c-btn-primary {
+    border-bottom: .6vh solid #21475c;
+    background-color: #428fb9;
+    color:white;
+}
+
+.c-btn-primary:hover {
+    background-color: #8dbbd5;
+
+}
+
+.c-btn-success {
+    border-bottom: .6vh solid #366033;
+    background-color: #62ad5c;
+    color:white;
+}
+
+.c-btn-success:hover {
+    background-color: #a0cd9d;
+
+}
