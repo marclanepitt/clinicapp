@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.c-topbar {
+    position:fixed;
+    height: 20vh;
+    width: 100vw;
+    z-index: 10;
+}
+
+.c-topbar-filters {
+    background-color: $primary-blue;
+    height: 15vh;
+}
+
+.c-topbar-filter-tags {
+    background-color:white;
+    height:8vh;
+}

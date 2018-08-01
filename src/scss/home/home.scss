@@ -1,9 +1,11 @@
+@import '../variables.scss';
+
 #search {
     height: 70vh;
-    background-image: url("../../../images/hockey-bg.jpg");
+    background-image: url("../../images/hockey-bg.jpg");
     background-size:     cover;
     background-repeat:   no-repeat;
-    background-position: center center;        
+    background-position: center center;
 }
 
 .search-center-box {
@@ -20,7 +22,7 @@
     font-family: Graduate;
     padding-top: 10vh;
     font-size: 6vh;
-    color:#314159;
+    color:$primary-blue;
 }
 
 .sub-title {

@@ -1,0 +1,16 @@
+.c-loader {
+  height: 30vh;
+  padding-top: 34vh;
+  width: 100vw;
+  text-align: center; }
+
+.c-loader > div {
+  display: inline-block; }
+
+.c-loader > div + div {
+  padding-top: 1vh; }
+
+.c-loader-text {
+  font-size: 6vh;
+  font-family: "logo-font";
+  color: #314159; }

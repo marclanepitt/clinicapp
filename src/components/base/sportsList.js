@@ -23,14 +23,14 @@ export const clinics = [
       "sport": "Football",
       "name": "Marc's demo clinic",
       "rating": 4,
-      "image": "http://via.placeholder.com/350x350"
+      "image": "https://images.pexels.com/photos/159571/american-football-football-canada-canadian-159571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": "5b42ca48784dd975ddc3d1b7",
       "sport": "Basketball",
       "name": "Icecats 18U Clinic",
       "rating": 4,
-      "image": "http://via.placeholder.com/350x350"
+      "image": "https://images.pexels.com/photos/1080882/pexels-photo-1080882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     },
     {
       "id": "5b42ca4864b18c6b636a981f",

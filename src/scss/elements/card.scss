@@ -1,0 +1,43 @@
+@import '../variables.scss';
+
+.c-card {
+    margin: 5vh 1.5vw;
+    height: 62vh;
+    width: 30vw;
+    border: gainsboro .003vh solid;
+    display: inline-block;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+}
+
+.c-card:hover {
+    z-index: 1;
+    box-shadow: 0 12px 48px 0 rgba(0,0,0,.2);
+}
+
+.c-card-img {
+    height:30vh;
+    width: 30vw;
+    background-size:30vw 30vh !important;
+    border-bottom: .3vh solid #6d8cba;
+}
+
+.c-card-title {
+    text-align: center;
+    padding-top: 4vh;
+    font-size: 3vh;
+    font-family: Graduate;
+}
+
+.c-card-category {
+    font-family: Graduate;
+    padding-right: 1vw;
+    padding-top: 3vh;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+.c-card-category > div {
+    float:right;
+}

@@ -42,7 +42,7 @@ export default class Base extends Component {
     setTimeout(()=>this.setState({loading:false}),4600);
     setTimeout(()=>handleFakeLoad(100),5000);
     setTimeout(()=>this.setState({navbarLoader:false, progress:0}),5100);
-    
+
 
 
     function handleFakeLoad(progress) {
@@ -60,8 +60,8 @@ export default class Base extends Component {
           <NavbarLoader progress={this.state.progress}/>
         }
         <div id="content">
-        {this.state.loading ? 
-          <Loader/>
+        {this.state.loading ?
+          <Loader text="Finding your next clinic"/>
         :
         <Switch>
           <Route children={({ history }) => <Home routeAndLoad={this.routeAndLoad} history={history} {...this.props} />} exact path="/" />

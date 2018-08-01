@@ -4,7 +4,7 @@ import SportSelect from "./SportSelect";
 import ClinicSection from "./ClinicSection";
 import Button from "../elements/Button";
 
-import "./css/home.css";
+import "../../scss/home/home.css";
 
 const data = [
  'Hockey',
@@ -40,9 +40,9 @@ export default class Home extends Component {
             <h4 className="text-center no-margin sub-title">Find the best sports clinics and camps near you!</h4>
             <div className="search-center-box">
                 <Biginput placeholder="Zipcode" className="zip-code-input" />
-                <SportSelect 
-                  placeholder="Sport" 
-                  sports = {data}  
+                <SportSelect
+                  placeholder="Sport"
+                  sports = {data}
                 />
                 <Button text="GO" type="primary" size="large" onClick={()=>this.props.routeAndLoad(()=>this.route("/clinics"))} />
             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./css/biginput.css";
+import "../../scss/elements/biginput.css";
 
 export default class Biginput extends Component {
   render() {

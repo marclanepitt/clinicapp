@@ -1,5 +1,7 @@
+@import '../variables.scss';
+
 .c-nav {
-    background-color: #314159;
+    background-color: $primary-blue;
     height: 10vh;
     width:100%;
     position: fixed;

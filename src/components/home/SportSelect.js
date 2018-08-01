@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./css/sport-select.css";
+import "../../scss/home/sport-select.css";
 
 export default class SportSelect extends Component {
 
@@ -38,7 +38,7 @@ export default class SportSelect extends Component {
       showDropdown:true
     })
   }
-      
+
 
   handleInputChange(e) {
     this.setState({
@@ -78,7 +78,7 @@ export default class SportSelect extends Component {
       if(this.state.selectedOptionIndex < this.state.filteredData.length) {
         this.setState({
           selectedOptionIndex: this.state.selectedOptionIndex + 1,
-        }) 
+        })
       }
     } else if(e.keyCode === 13) { //enter
       if(this.state.selectedOptionIndex > 0 && this.state.selectedOptionIndex < this.state.filteredData.length + 1) {
@@ -98,18 +98,18 @@ export default class SportSelect extends Component {
   }
 
   render() {
-  
+
     return (
       <div className="sport-select-outer">
-        <input 
+        <input
           onKeyDown={(e) => this.onKeyPressed(e)}
-          tabIndex="0" 
-          className="sport-select-input" 
-          value = {this.state.value} 
-          placeholder={this.props.placeholder} 
+          tabIndex="0"
+          className="sport-select-input"
+          value = {this.state.value}
+          placeholder={this.props.placeholder}
           onChange={(e)=>this.handleInputChange(e)}
         />
-        {this.state.showDropdown && 
+        {this.state.showDropdown &&
           <div className="sport-select-dropdown-wrap">
             {this.state.filteredData.map((option, index) => {
               return <div key={"option"+index} onClick={ ()=>this.handleOptionSelect(option)} value={option.value} style={{backgroundColor:this.state.selectedOptionIndex-1 === index ? "#dcdcdc" : "white"}} className="sport-select-option ">{option.label}</div>
