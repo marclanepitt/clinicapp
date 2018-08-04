@@ -5,7 +5,7 @@ export default class Tag extends Component {
   render() {
     return (
         <div className="c-filter-tag">
-            {this.props.text}
+            {this.props.text} <i class="far fa-times-circle"/>
         </div>
     )
   }

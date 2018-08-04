@@ -10,13 +10,13 @@
 
 .c-card:hover {
   z-index: 1;
-  box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.2); }
 
 .c-card-img {
   height: 30vh;
   width: 30vw;
   background-size: 30vw 30vh !important;
-  border-bottom: .3vh solid #6d8cba; }
+  border-bottom: 0.3vh solid #428fb9; }
 
 .c-card-title {
   text-align: center;

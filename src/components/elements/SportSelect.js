@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../../scss/home/sport-select.css";
+import "../../scss/elements/sport-select.css";
 
 export default class SportSelect extends Component {
 

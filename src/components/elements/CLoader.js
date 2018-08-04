@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { BeatLoader } from 'react-spinners';
-import "../../scss/base/loader.css";
+import "../../scss/elements/loader.css";
 
 export default class CLoader extends Component {
   render() {

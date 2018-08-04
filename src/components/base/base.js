@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Switch } from "react-router-dom";
-import Navbar from "./Navbar";
-import NavbarLoader from "./NavbarLoader";
-import Home from "../home/Home";
+import Navbar from "../elements/Navbar";
+import NavbarLoader from "../elements/NavbarLoader";
+import Landing from "../landing/Landing";
 import Main from "../main/Main";
-import Loader from "./CLoader";
+import Loader from "../elements/CLoader";
 
 export default class Base extends Component {
 
@@ -64,7 +64,7 @@ export default class Base extends Component {
           <Loader text="Finding your next clinic"/>
         :
         <Switch>
-          <Route children={({ history }) => <Home routeAndLoad={this.routeAndLoad} history={history} {...this.props} />} exact path="/" />
+          <Route children={({ history }) => <Landing routeAndLoad={this.routeAndLoad} history={history} {...this.props} />} exact path="/" />
           <Route children={({ history }) => <Main routeAndLoad={this.routeAndLoad} history={history} {...this.props} />} path="/clinics"/>
         </Switch>
         }

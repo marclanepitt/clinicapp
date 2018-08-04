@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Biginput from "../elements/Biginput";
-import SportSelect from "./SportSelect";
+import SportSelect from "../elements/SportSelect";
 import ClinicSection from "./ClinicSection";
 import Button from "../elements/Button";
 
-import "../../scss/home/home.css";
+import "../../scss/landing/landing.css";
 
 const data = [
  'Hockey',

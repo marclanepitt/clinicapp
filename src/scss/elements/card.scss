@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixins.scss';
 
 .c-card {
     margin: 5vh 1.5vw;
@@ -6,21 +7,21 @@
     width: 30vw;
     border: gainsboro .003vh solid;
     display: inline-block;
-    cursor:pointer;
-    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transition: $simple-ease-transition;
     background-color:white;
 }
 
 .c-card:hover {
     z-index: 1;
-    box-shadow: 0 12px 48px 0 rgba(0,0,0,.2);
+    @include box-shadow(24);
 }
 
 .c-card-img {
     height:30vh;
     width: 30vw;
     background-size:30vw 30vh !important;
-    border-bottom: .3vh solid #6d8cba;
+    border-bottom: .3vh solid $color-primary;
 }
 
 .c-card-title {
