@@ -44,7 +44,7 @@ export default class Home extends Component {
                   placeholder="Sport"
                   sports = {data}
                 />
-                <Button text="GO" type="primary" size="large" onClick={()=>this.props.routeAndLoad(()=>this.route("/clinics"))} />
+                <Button text="GO" type="primary" size="large" />
             </div>
         </section>
         <ClinicSection title="Features" />

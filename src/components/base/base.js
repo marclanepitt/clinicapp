@@ -4,7 +4,9 @@ import Navbar from "../elements/Navbar";
 import NavbarLoader from "../elements/NavbarLoader";
 import Landing from "../landing/Landing";
 import Main from "../main/Main";
+import AdminLanding from "../admin/Landing";
 import Loader from "../elements/CLoader";
+import Button from "../elements/Button";
 
 export default class Base extends Component {
 
@@ -15,7 +17,6 @@ export default class Base extends Component {
       navbarLoader:false,
       progress:0,
     }
-    this.routeAndLoad = this.routeAndLoad.bind(this);
   }
 
   componentDidMount() {
@@ -24,38 +25,16 @@ export default class Base extends Component {
     })
   }
 
-  routeAndLoad(callback) {
-    let _this = this;
-
-    this.setState({
-      loading:true,
-      navbarLoader: true,
-    });
-
-    setTimeout(()=>handleFakeLoad(10),1000);
-    setTimeout(()=>handleFakeLoad(30),2000);
-    setTimeout(()=>handleFakeLoad(50),2000);
-    setTimeout(()=>handleFakeLoad(70),3000);
-    setTimeout(callback, 4000)
-    setTimeout(()=>handleFakeLoad(80),4000);
-    setTimeout(()=>handleFakeLoad(90),4500);
-    setTimeout(()=>this.setState({loading:false}),4600);
-    setTimeout(()=>handleFakeLoad(100),5000);
-    setTimeout(()=>this.setState({navbarLoader:false, progress:0}),5100);
-
-
-
-    function handleFakeLoad(progress) {
-      _this.setState({
-        progress: progress
-      });
-    }
-  }
-
   render() {
+
+    const navElements = [
+      <Button text="Login" type="default" />,
+      <Button onClick={()=>this.routeAndLoad()} text="Run a Clinic?" type="success" />
+    ]
+
     return (
       <div>
-        <Navbar />
+        <Navbar navElements={navElements}/>
         {this.state.navbarLoader &&
           <NavbarLoader progress={this.state.progress}/>
         }
@@ -64,8 +43,9 @@ export default class Base extends Component {
           <Loader text="Finding your next clinic"/>
         :
         <Switch>
-          <Route children={({ history }) => <Landing routeAndLoad={this.routeAndLoad} history={history} {...this.props} />} exact path="/" />
-          <Route children={({ history }) => <Main routeAndLoad={this.routeAndLoad} history={history} {...this.props} />} path="/clinics"/>
+          <Route children={({ history }) => <Landing history={history} {...this.props} />} exact path="/" />
+          <Route children={({ history }) => <Main history={history} {...this.props} />} path="/clinics"/>
+          <Route children={({ history }) => <AdminLanding history={history} {...this.props} />} path="/admin" />
         </Switch>
         }
         </div>
