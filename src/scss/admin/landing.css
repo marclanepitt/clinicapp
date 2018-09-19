@@ -1,0 +1,10 @@
+.c-admin-landing-col {
+  display: inline-block;
+  width: 22vw;
+  height: 40vh;
+  padding: 2vh 2vw;
+  vertical-align: top; }
+  .c-admin-landing-col.right-border {
+    border-right: .2vw solid whitesmoke; }
+  .c-admin-landing-col.left-border {
+    border-left: .2vw solid whitesmoke; }

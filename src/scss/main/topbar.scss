@@ -10,9 +10,15 @@
 .c-topbar-filters {
     background-color: $primary-blue;
     height: 15vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .c-topbar-filter-tags {
     background-color:white;
     height:8vh;
+}
+
+.topbar-smart-input {
+    margin-top:2vh;
 }

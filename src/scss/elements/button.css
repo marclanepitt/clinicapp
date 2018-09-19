@@ -8,7 +8,8 @@
   outline: none; }
 
 .c-btn:active {
-  border: none !important; }
+  border: none !important;
+  transform: translateY(0.2vw); }
 
 .c-btn-large {
   font-size: 3.5vh; }
@@ -44,3 +45,24 @@
 
 .c-btn-success:hover {
   background-color: #a0cd9d; }
+
+.c-btn-success--disabled {
+  background-color: #a0cd9d !important;
+  cursor: not-allowed; }
+  .c-btn-success--disabled:active {
+    border-bottom: 0.6vh solid #366033 !important;
+    transform: none !important; }
+
+.c-btn-primary--disabled {
+  background-color: #8dbbd5 !important;
+  cursor: not-allowed; }
+  .c-btn-primary--disabled:active {
+    border-bottom: 0.6vh solid #366033 !important;
+    transform: none !important; }
+
+.c-btn-danger--disabled {
+  background-color: #ff6f6f !important;
+  cursor: not-allowed; }
+  .c-btn-danger--disabled:active {
+    border-bottom: 0.6vh solid #366033 !important;
+    transform: none !important; }

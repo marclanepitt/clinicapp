@@ -1,0 +1,36 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.calendar-banner {
+    position: absolute;
+}
+
+.calendar-banner-month {
+    background-color: $danger-color-light;
+    padding: 1vh 2vw 1vh 2vw;
+    font-size:2.2vh;
+    @include box-shadow(1);
+    font-weight:bold;
+    color:white;
+
+    span {
+        font-size: 2vh;
+    }
+}
+
+.calendar-banner-date {
+    text-align: center;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    font-size: 4vh;
+    background-color: white;
+    color:rgb(53, 53, 53);
+    @include box-shadow(1);
+    border-bottom-right-radius: 1vh;
+
+    span {
+        position: relative;
+        font-size:2.5vh;
+        bottom: 1vh;
+    }
+}

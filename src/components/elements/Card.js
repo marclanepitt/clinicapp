@@ -5,8 +5,7 @@ import "../../scss/elements/card.css";
 class Card extends Component {
   render() {
     return (
-        <div className="c-card">
-            <div className="c-card-img scale-background-image" style={{backgroundImage: "url(" + this.props.image  + ")"}}/>
+        <div onClick={this.props.onClick} className="c-card">
             <div className="c-card-content">
                 <div className="c-card-category">
                     <div>
@@ -15,6 +14,9 @@ class Card extends Component {
                 </div>
                 <div className="c-card-title">
                     {this.props.title}
+                </div>
+                <div className="c-card-subtitle">
+                    {this.props.subtitle}
                 </div>
                 <div className="c-card-body">
                     {this.props.body}

@@ -1,32 +1,17 @@
 import React, { Component } from 'react';
 import "../../scss/main/clinic-card-body.css";
+import RatingStars from "../elements/RatingStars";
 
 export default class ClinicCardBody extends Component {
-
-    renderStars(rating) {
-        let stars = []
-
-        for(let i = 0; i < 5; i++) {
-            if(i < rating) {
-                stars.push(<span className="fas fa-star yellow-color-20"/>)
-            } else {
-                stars.push(<span className="fa fa-star gainsboro"/>)
-            }
-        }
-        return stars
-    }
-
   render() {
     return (
         <div>
-            <div className="c-card-body-stars text-center c-padding-top-3">
-                {this.renderStars(this.props.clinic.rating)}
-            </div>
+            <RatingStars rating={this.props.clinic.rating.rating__avg} className="text-center c-padding-top-3"/>
             <div className="c-card-body-location text-center c-padding-top-3">
-                <span className="fas fa-map-marker red-color-20 text-center"/> Long Beach, NY
+                <span className="fas fa-map-marker red-color-20 text-center"/> {this.props.clinic.location}
             </div>
-            <div className="c-card-body-price text-center c-padding-top-3 green-color-20">
-            $100 - $200
+            <div className="c-card-body-price text-center c-padding-top-2 primary-blue text-font bold">
+            ${this.props.clinic.price}
             </div>
         </div>
     )

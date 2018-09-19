@@ -7,8 +7,9 @@ import Main from "../main/Main";
 import AdminLanding from "../admin/Landing";
 import Loader from "../elements/CLoader";
 import Button from "../elements/Button";
+import { withRouter } from "react-router-dom";
 
-export default class Base extends Component {
+class Base extends Component {
 
   constructor(props) {
     super(props);
@@ -22,15 +23,17 @@ export default class Base extends Component {
   componentDidMount() {
     this.setState({
       navbarLoader:false,
-    })
+    });
   }
 
   render() {
+    const navElements = [];
+    if(this.props.location.pathname === "/admin") {
+      navElements.push(<Button onClick={()=>this.props.history.push("/admin")} text="Login" type="primary" />)
+    } else {
+      navElements.push(<Button onClick={()=>this.props.history.push("/admin")} text="Run a Clinic?" type="success" />)
+    }
 
-    const navElements = [
-      <Button text="Login" type="default" />,
-      <Button onClick={()=>this.routeAndLoad()} text="Run a Clinic?" type="success" />
-    ]
 
     return (
       <div>
@@ -43,8 +46,8 @@ export default class Base extends Component {
           <Loader text="Finding your next clinic"/>
         :
         <Switch>
-          <Route children={({ history }) => <Landing history={history} {...this.props} />} exact path="/" />
-          <Route children={({ history }) => <Main history={history} {...this.props} />} path="/clinics"/>
+          <Route children={({ history }) => <Landing routeAndLoad={this.routeAndLoad} history={history} {...this.props} />} exact path="/" />
+          <Route children={({ history }) => <Main history={history} setLoading={this.setLoading} {...this.props} />} path="/clinics"/>
           <Route children={({ history }) => <AdminLanding history={history} {...this.props} />} path="/admin" />
         </Switch>
         }
@@ -53,3 +56,4 @@ export default class Base extends Component {
     )
   }
 }
+export default withRouter(Base);

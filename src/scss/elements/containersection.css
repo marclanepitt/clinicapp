@@ -1,0 +1,11 @@
+.c-container-section {
+  width: 100%;
+  border-top: 0.6vh solid #314159;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); }
+
+.c-container-section-header {
+  background-color: #314159;
+  padding: 1.3vh 1.5vw;
+  color: white;
+  font-size: 2.3vh;
+  font-family: Graduate; }

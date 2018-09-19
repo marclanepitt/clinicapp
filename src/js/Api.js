@@ -4,8 +4,7 @@ class Api {
   constructor() {
     this.uuid =  "";
     this.apiVersion = "v1";
-    //this.url = "http://localhost:8000/api";
-    this.url = "https://class-cal-api.herokuapp.com/api";
+    this.url = "http://localhost:8000/api";
     this.user = {};
 
   }
@@ -23,9 +22,25 @@ class Api {
   }
 
   getClinics() {
-    return "hi"
+    return axios.get(this.generateUrl("clinics/list", this.apiVersion))
+    .then((response) => {
+      return response.data;
+    });
   }
 
+  getClinic(id) {
+    return axios.get(this.generateUrl("clinics/detail/"+id+"/", this.apiVersion))
+    .then((response) => {
+      return response.data;
+    });
+  }
+
+  getReviews(id) {
+    return axios.get(this.generateUrl("clinics/reviews/"+id+"/", this.apiVersion))
+    .then((response) => {
+      return response.data;
+    });
+  }
 }
 
 

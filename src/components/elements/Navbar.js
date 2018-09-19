@@ -8,8 +8,8 @@ export default class Navbar extends Component {
         <div className="c-nav-logo">
             ClinicBlitz
         </div>
-        {this.props.navElements.map( (el) =>{
-          return <div className="c-nav-el c-nav-right c-margin-right-3">
+        {this.props.navElements.map( (el, i) =>{
+          return <div key={i} className="c-nav-el c-nav-right">
               {el}
           </div>
         })}

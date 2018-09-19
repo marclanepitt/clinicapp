@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Graduate');
 @import '../variables.scss';
+@import '../mixins.scss';
 
 .c-btn {
     padding: 1vh 1vw 1vh 1vw;
@@ -12,6 +13,7 @@
 
 .c-btn:active {
     border: none !important;
+    transform: translateY(.2vw);
 }
 
 .c-btn-large {
@@ -59,4 +61,16 @@
 .c-btn-success:hover {
     background-color: $success-color-light;
 
+}
+
+.c-btn-success--disabled {
+    @include disabled-btn($success-color-light);
+}
+
+.c-btn-primary--disabled {
+    @include disabled-btn($color-light);
+}
+
+.c-btn-danger--disabled {
+    @include disabled-btn($danger-color-light);
 }

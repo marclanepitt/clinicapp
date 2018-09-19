@@ -3,8 +3,8 @@
 
 .c-card {
     margin: 5vh 1.5vw;
-    height: 62vh;
-    width: 30vw;
+    height: 36vh;
+    width: 21.4vw;
     border: gainsboro .003vh solid;
     display: inline-block;
     cursor: pointer;
@@ -26,8 +26,15 @@
 
 .c-card-title {
     text-align: center;
-    padding-top: 4vh;
-    font-size: 3vh;
+    padding-top: 5vh;
+    font-size: 2.5vh;
+    font-family: Graduate;
+}
+
+.c-card-subtitle {
+    text-align: center;
+    padding-top: 1.5vh;
+    font-size: 2vh;
     font-family: Graduate;
 }
 

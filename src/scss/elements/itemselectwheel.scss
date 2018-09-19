@@ -1,0 +1,41 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.c-select-wheel-content {
+    text-align: center;
+}
+
+.c-select-wheel-item {
+    width: 11vw;
+    height: 14vh;
+    border: .1vh solid #dcdcdc;
+    display: inline-block;
+    margin: 0 .5vw;
+    vertical-align: bottom;
+    font-size: 2vh;
+    padding: 1vw 1vh;
+    text-align: center;
+    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    border-radius: 2vh;
+    letter-spacing: .1vw;
+    color: $primary-blue;
+    font-weight: 600;
+    @include simple-transition(.2s);
+}
+
+.c-select-wheel-item:hover {
+    background-color:#f5f5f5;
+    cursor:pointer;
+}
+
+.c-select-wheel-item--selected {
+    background-color:#f5f5f5;
+    transform: scale(1.06);
+
+}
+
+.c-select-wheel-item-price {
+    padding-top: 4vh;
+    display: inline-block;
+    font-size: 3.2vh;
+}

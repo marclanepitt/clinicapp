@@ -1,0 +1,10 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.c-review-container {
+    @include box-shadow(2);
+    padding: 3vh 2vw;
+    font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    letter-spacing: .02vw;
+    font-size: 2.2vh;
+}

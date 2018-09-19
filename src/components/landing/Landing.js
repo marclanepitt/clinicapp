@@ -36,15 +36,15 @@ export default class Home extends Component {
     return (
       <div>
         <section id="search">
-            <h1 className="text-center no-margin main-title">Take yourself to the next LEVEL</h1>
-            <h4 className="text-center no-margin sub-title">Find the best sports clinics and camps near you!</h4>
+            <h1 className="text-center no-margin main-title">Get to the next LEVEL</h1>
+            <h4 className="text-center no-margin sub-title">Find the best sports clinics and camps near you</h4>
             <div className="search-center-box">
                 <Biginput placeholder="Zipcode" className="zip-code-input" />
                 <SportSelect
                   placeholder="Sport"
                   sports = {data}
                 />
-                <Button text="GO" type="primary" size="large" />
+                <Button onClick={()=>this.props.history.push("/clinics")} text="GO" type="primary" size="large" />
             </div>
         </section>
         <ClinicSection title="Features" />

@@ -1,0 +1,5 @@
+.image-container {
+  height: 30vh;
+  width: 30vw;
+  background-size: 30vw 30vh !important;
+  border: .5vh solid gainsboro; }

@@ -1,0 +1,22 @@
+.smart-select-outer {
+  display: inline-block;
+  padding: 0 1vw; }
+
+.smart-select-input {
+  padding: 1vh 0 1vh 1vw;
+  border: none;
+  height: 5vh;
+  font-size: 3vh;
+  border: 1px solid lightgrey;
+  box-shadow: 0 .3vh 0 lightgray;
+  width: 25vw; }
+
+.smart-select-input::placeholder {
+  color: gray;
+  opacity: 1; }
+
+.smart-select-input:-ms-input-placeholder {
+  color: gray; }
+
+.smart-select-input::-ms-input-placeholder {
+  color: gray; }

@@ -1,3 +1,21 @@
 @mixin box-shadow($scale) {
     box-shadow: 0 ($scale * 1px) ($scale * 2px) 0 rgba(0,0,0,.2)
 }
+
+@mixin box-shadow-sides($scale) {
+    box-shadow: ($scale * 1px) 0 ($scale * 1px) ($scale * -1px) rgba(0,0,0,.2);
+}
+
+@mixin simple-transition($time) {
+    transition: all $time ease-in-out;
+}
+
+@mixin disabled-btn($color) {
+    background-color: $color !important;
+    cursor: not-allowed;
+
+    &:active {
+        border-bottom: .6vh solid $success-color-secondary !important;
+        transform: none !important;
+    }
+}
